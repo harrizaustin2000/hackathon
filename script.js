@@ -5,7 +5,7 @@ async function display_Product_Info() {
     data1.forEach((data2) => createDetail(data2));
 }
 
-function createDetail(data2) {
+function display_product(data2) {
     const product = document.createElement("div");
     product.setAttribute("class", "container");
 
