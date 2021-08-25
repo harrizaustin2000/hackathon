@@ -2,10 +2,10 @@ async function display_Product_Info() {
     const data = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json")
     const data1 = await data.json();
     console.log(data1);
-    data1.forEach((data2) => createDetail(data2));
+    data1.forEach((data2) => display_Product(data2));
 }
 
-function display_product(data2) {
+function display_Product(data2) {
     const product = document.createElement("div");
     product.setAttribute("class", "container");
 
